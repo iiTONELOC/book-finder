@@ -8,11 +8,10 @@ type Auth {
     user: User
 }
 type Book {
-    bookId: ID
+    bookId: String
     authors: [String]
     description: String
     image: String
-    link: String
     title: String
 }
 type User {
@@ -30,22 +29,9 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveBook(book: BookInput): User
+    saveBook(bookId: String!, authors: String, description:String, image:String title:String): User
 }
-input BookInput {
-    "Google's Book Id"
-    bookId: ID
-    "Lis of Authors of the book"
-    authors: [String]
-    "Books description"
-    description: String
-    "Image"
-    image: String
-    "Link "
-    link: String
-    "Title"
-    title: String
-}
+
 `;
 
 // export the typeDefs
