@@ -19,9 +19,6 @@ Book Finder is a MERN App that uses the Google Books API to return results. Logg
 - [Questions](#questions)
 - [License](#license)
 
-# Demo
-
-[DEMO: Book Finder]()
 
 # Technology
 
